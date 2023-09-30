@@ -4,6 +4,8 @@ package com.br.api.controller;
 
 import com.br.api.model.Pessoa; // Corrigido o import
 import com.br.api.service.PessoaService; // Corrigido o import
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +22,8 @@ import java.util.List;
 @RequestMapping("/pessoa")
 public class PessoaController {
 
-    private final PessoaService pessoaService;
+    @Autowired
+    private  PessoaService pessoaService;
 
     
     public PessoaController(PessoaService pessoaService) {
