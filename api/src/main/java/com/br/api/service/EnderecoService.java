@@ -2,7 +2,8 @@ package com.br.api.service;
 
 import com.br.api.model.Endereco; // Corrigido o import
 import com.br.api.repository.EnderecoRepository;
-import com.br.api.service.EnderecoService; // Corrigido o impor
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EnderecoService {
+public class EnderecoService{
 
     @Autowired
     private EnderecoRepository enderecoRepository;

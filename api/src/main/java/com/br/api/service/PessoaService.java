@@ -1,7 +1,6 @@
 package com.br.api.service;
 
 import com.br.api.model.Pessoa;
-import com.br.api.service.PessoaService;
 import com.br.api.repository.PessoaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
